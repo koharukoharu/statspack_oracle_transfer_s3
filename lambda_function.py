@@ -119,8 +119,6 @@ def lambda_handler(event, context):
         # Request発行
         r = requests.get(endpoint, headers=headers, stream=True)
 
-        #rds_response = rds_response["LogFileData"]
-
         putfilename = "/tmp/" + new_LOGFILE_NAME 
         with open(putfilename, 'wb') as f:
             for part in r.iter_content(chunk_size=8192):

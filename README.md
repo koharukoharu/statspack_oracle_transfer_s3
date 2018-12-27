@@ -20,6 +20,18 @@ instantclient-basiclite-linux.x64-12.1.0.2.0.zip
 instantclient-sqlplus-linux.x64-12.1.0.2.0.zip
 instantclient-sdk-linux.x64-12.1.0.2.0.zip
 
+４．環境変数
+lambdaの環境変数として定義する。
+
+REGION　　　　※リージョン名
+dbname　　　　※RDSインスタンス名
+endpoint　　　※RDSエンドポイント
+my_db　　　　 ※DB名
+password　　　※RDSパスワード
+s3bucket　　　※格納先バケット名
+search_word　※ログ名を検索するワード（部分一致）
+user　　　　　※RDSユーザ
+
 ※参考：動作しているlambda関数のtree
 .
 ├── INSTALLER
